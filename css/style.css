@@ -1981,10 +1981,11 @@ footer {
    REVEALS & ACCESSIBILITY (Reduced Motion)
    ========================================================= */
 .reveal {
-  opacity: 0;
-  transform: translateY(24px);
+  opacity: 1;
+  transform: none;
   transition: opacity 0.8s var(--ease), transform 0.8s var(--ease);
 }
+
 
 .reveal.active {
   opacity: 1;
