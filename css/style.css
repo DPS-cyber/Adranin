@@ -1209,7 +1209,15 @@ nav.links a:hover::after {
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1.15fr;
-  gap: 100px;
+  gap: 80px;
+  align-items: start;
+}
+
+/* Reveal elements inside contact overlay are injected dynamically
+   — force them visible since IntersectionObserver has already run */
+#contact-overlay .reveal {
+  opacity: 1 !important;
+  transform: none !important;
 }
 
 @media (max-width: 900px) {
