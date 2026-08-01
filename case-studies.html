@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Studies/projects — adranin</title>
+  <meta name="description"
+    content="In-depth case studies from adranin: the brief, the approach and the measurable results behind each project.">
+  <link rel="canonical" href="https://add-it.pages.dev/case-studies.html">
+  <link rel="icon" href="assets/logo.png" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=JetBrains+Mono:wght@500;700&family=Anton&family=Italianno&family=Syne:wght@800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+
+  @font-face{
+    font-family:'Ashing';
+    src: url('fonts/Ashing.woff2') format('woff2'),
+         url('fonts/ahsing-regular.otf') format('opentype');
+    font-weight:400 800;
+    font-display:swap;
+  }
+
+    /* Coded thumbnail for the Nevs Cafe card — self-sized like an <img> would be */
+    .cs-thumb-nevs{
+      position:relative; width:100%;
+      aspect-ratio: 4 / 5; /* adjust this to match your other cards' image ratio if different */
+      background:#EECEB2;
+      display:flex; flex-direction:column; align-items:center;
+      justify-content:flex-start; padding-top:18%;
+      gap:16px;
+    }
+    .cs-thumb-nevs .lockup{
+      font-family:'Anton', sans-serif; font-size:4.1rem; color:#1B0E06;
+      display:flex; align-items:baseline; gap:6px; letter-spacing:.01em;
+    }
+    .cs-thumb-nevs .lockup span{
+      font-family:'Italianno', cursive; font-size:1.55em; font-weight:400;
+    }
+    .cs-thumb-nevs .caption{
+      font-family:'Inter', 'Poppins', sans-serif; font-size:.68rem;
+      letter-spacing:.18em; text-transform:uppercase; color:rgba(27,14,6,.5);
+    }
+    /* Coded thumbnail for the Fision card */
+    .cs-thumb-fision{
+      position:relative; width:100%;
+      aspect-ratio: 4 / 5; /* keep in sync with .cs-thumb-nevs above */
+      background:#0A0A0A;
+      display:flex; flex-direction:column; align-items:center;
+      justify-content:flex-start; padding-top:18%;
+      gap:14px;
+    }
+    .cs-thumb-fision .lockup{
+      font-family:'Ashing','Syne', sans-serif; font-weight:800; font-size:4rem;
+      letter-spacing:-.01em; color:#fff;
+    }
+    .cs-thumb-fision .caption{
+      font-family:'Inter', 'Poppins', sans-serif; font-size:.68rem;
+      letter-spacing:.18em; text-transform:uppercase; color:rgba(255,255,255,.55);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ============ NAV ============ -->
+  <global-header></global-header>
+  <main>
+    <!-- ============ PAGE HERO ============ -->
+    <section class="page-hero">
+      <div class="wrap">
+        <div class="crumb"><a href="index.html">Home</a> / Case Studies-Projects</div>
+        <div class="eyebrow">Case studies / Project</div>
+        <h1 class="h-xl">The brief, the build<br>and the <span class="stroke accent">result<svg viewBox="0 0 220 24"
+              preserveAspectRatio="none">
+              <path d="M2,14 C50,4 100,20 130,10 C160,2 190,16 218,8" stroke="#EA5C1F" stroke-width="6" fill="none"
+                stroke-linecap="round" />
+            </svg></span>.</h1>
+        <p class="lede on-dark">Four projects, broken down end to end. Want the raw reels and frames instead? That's the
+          <a href="work.html" style="color:var(--orange); text-decoration:underline;">work library</a>.</p>
+      </div>
+    </section>
+
+    <!-- ============ CASE STUDY GRID ============ -->
+    <section class="block" id="case-studies">
+      <div class="wrap">
+        <div class="lib-tools reveal">
+          <input type="text" id="workSearch" class="lib-search" placeholder="Search case studies…">
+          <div class="filters">
+            <button class="filter active" data-filter="all">All</button>
+            <button class="filter" data-filter="content">Content Sprint</button>
+            <button class="filter" data-filter="conversion">Conversion Engine</button>
+            <button class="filter" data-filter="mastery">Social Mastery</button>
+          </div>
+        </div>
+
+        <div class="cs-grid" id="csGrid">
+<a href="case-studies/shagun-jewellers.html" class="cs-card reveal" data-tags="content shagun jewellers">
+            <img src="file:///C:/Users/SR/Downloads/site/23.png" alt="Shagun Jewellers" loading="lazy">
+            <div class="cs-card-overlay">
+              <div class="cs-tag">Content Sprint</div>
+              <h3>Shagun jewellers</h3>
+              <div class="cs-result">quick cgi in and hour</div>
+            </div>
+            <div class="cs-arrow"><i class="fa-solid fa-arrow-up-right"></i></div>
+          </a>
+
+
+          <a href="case-studies/nevs-cafe-case-study.html" class="cs-card reveal" data-tags="brand packaging cafe nevs">
+            <div class="cs-thumb-nevs">
+              <div class="lockup">NEVS<span>cafe</span></div>
+              <div class="caption">Primary Lockup</div>
+            </div>
+            <div class="cs-card-overlay">
+              <div class="cs-tag">Logo &amp; Branding</div>
+              <h3>Nevs Cafe(cs)</h3>
+              <div class="cs-result">Great vibes, well brew</div>
+            </div>
+            <div class="cs-arrow"><i class="fa-solid fa-arrow-up-right"></i></div>
+          </a>
+
+          <a href="case-studies/fision-case-study.html" class="cs-card reveal" data-tags="brand packaging fashion fision">
+            <div class="cs-thumb-fision">
+              <div class="lockup">FISION</div>
+              <div class="caption">Fashion Clothing</div>
+            </div>
+            <div class="cs-card-overlay">
+              <div class="cs-tag">Logo &amp; Branding</div>
+              <h3>Fision(cs)</h3>
+              <div class="cs-result">Style is on</div>
+            </div>
+            <div class="cs-arrow"><i class="fa-solid fa-arrow-up-right"></i></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA BAND ============ -->
+    <section class="block ink">
+      <div class="wrap" style="text-align:center;">
+        <div class="eyebrow" style="justify-content:center;">Next up: your project</div>
+        <h2 class="h-lg">Want results like these <span class="accent">on your brand</span>?</h2>
+        <a href="#" class="btn btn-solid js-open-contact" style="margin-top:30px;">Start a project <i
+            class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ CONTACT OVERLAY ============ -->
+  <div id="contact-overlay">
+    <div id="contact-close" class="js-close-contact">&times;</div>
+    <div class="wrap contact-grid">
+      <div class="reveal">
+        <div class="eyebrow">Start a project</div>
+        <h2 class="h-lg">Let's build<br>something that<br><span class="accent">compounds</span>.</h2>
+        <p class="lede" style="margin-top:24px;">Tell us where the brand is today and where it needs to be. We'll reply
+          within one business day.</p>
+        <div class="contact-list">
+          <div class="row"><span>Email</span><span>hello@itsadranin.com</span></div>
+          <div class="row"><span>Instagram</span><span>@itsadranin</span></div>
+          <div class="row"><span>Based in</span><span>Hyderabad, India</span></div>
+        </div>
+      </div>
+
+      <form id="contactForm" class="card-form reveal">
+        <div style="position:absolute; left:-9999px;" aria-hidden="true">
+          <input type="text" name="username_hp" tabindex="-1" autocomplete="off">
+        </div>
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+        </div>
+        <div class="form-row">
+          <input type="tel" name="phone" placeholder="Phone">
+          <div class="dd" id="dd">
+            <div class="dd-trigger" id="ddTrigger"><span id="ddLabel">Select service</span><i
+                class="fa-solid fa-chevron-down"></i></div>
+            <input type="hidden" name="service" id="serviceInputVal">
+            <div class="dd-menu" id="ddMenu">
+              <div class="opt" data-value="Content">Content Sprint</div>
+              <div class="opt" data-value="Conversion">Conversion Engine</div>
+              <div class="opt" data-value="Mastery">Social Mastery</div>
+            </div>
+          </div>
+        </div>
+        <input type="text" name="channels" placeholder="Instagram / business URL">
+        <input type="text" name="purpose" placeholder="Project purpose / goal">
+        <textarea name="message" placeholder="Details" rows="4"></textarea>
+        <button type="submit" class="submit-btn">Submit</button>
+        <p id="form-resp"></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- ============ SERVERLESS COMPONENT OVERLAYS ============ -->
+  <global-contact></global-contact>
+  <global-lightbox></global-lightbox>
+
+  <!-- ============ SERVERLESS COMPONENT FOOTER ============ -->
+  <global-footer></global-footer>
+  <script src="js/components.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const search = document.getElementById("workSearch");
+      const filters = document.querySelectorAll(".filters .filter");
+      const cards = document.querySelectorAll("#csGrid .cs-card");
+      let active = "all";
+
+      function run() {
+        const q = (search?.value || "").trim().toLowerCase();
+        cards.forEach(card => {
+          const tags = card.getAttribute("data-tags") || "";
+          const okFilter = active === "all" || tags.includes(active);
+          const okQuery = q === "" || tags.includes(q) || card.textContent.toLowerCase().includes(q);
+          card.classList.toggle("hidden", !(okFilter && okQuery));
+        });
+      }
+
+      filters.forEach(btn => {
+        btn.addEventListener("click", () => {
+          filters.forEach(b => b.classList.remove("active"));
+          btn.classList.add("active");
+          active = btn.getAttribute("data-filter");
+          run();
+        });
+      });
+      search?.addEventListener("input", run);
+    });
+  </script>
+</body>
+
+</html>
