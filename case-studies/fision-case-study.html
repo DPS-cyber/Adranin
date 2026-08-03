@@ -191,10 +191,162 @@
   .cta-btn:hover svg{ transform:translateX(4px); }
 
   @media (max-width:800px){
-    .meta, .logo-grid, .palette-grid, .type-row, .app-grid, .presence, .related-grid{ grid-template-columns:1fr; }
-    .hero-flex{ flex-direction:column; align-items:flex-start; }
-    .phone{ margin-left:0; }
-    .back-btn{ top:14px; left:14px; }
+    section {
+      padding: 50px 6vw !important;
+    }
+
+    .hero {
+      padding: 90px 6vw 50px !important;
+      text-align: center;
+    }
+
+    .hero-flex {
+      flex-direction: column !important;
+      align-items: center !important;
+      gap: 24px !important;
+    }
+
+    .hero-text {
+      text-align: center !important;
+    }
+
+    .hero-text h1 {
+      font-size: clamp(3rem, 11vw, 5.5rem) !important;
+      text-align: center !important;
+    }
+
+    .hero-text .sub {
+      font-size: 1.4rem !important;
+      margin-top: 10px;
+    }
+
+    .mono-mark {
+      width: 140px !important;
+      height: 140px !important;
+      flex-shrink: 0 !important;
+      align-self: center !important;
+      margin: 20px auto 0 !important;
+    }
+
+    .tile-divider {
+      height: 36px !important;
+    }
+
+    .tile-divider svg {
+      width: 16px !important;
+      height: 16px !important;
+    }
+
+    .meta {
+      padding: 50px 6vw !important;
+      grid-template-columns: 1fr !important;
+      gap: 36px !important;
+    }
+
+    .meta .side div {
+      margin-bottom: 20px !important;
+    }
+
+    .logo-grid,
+    .type-row,
+    .app-grid,
+    .presence,
+    .related-grid {
+      grid-template-columns: 1fr !important;
+    }
+
+    .logo-card {
+      min-height: 150px !important;
+      padding: 30px 20px !important;
+    }
+
+    .wordmark {
+      font-size: 2rem !important;
+    }
+
+    .palette-grid {
+      grid-template-columns: repeat(2, 1fr) !important;
+      gap: 12px !important;
+    }
+
+    .swatch .chip {
+      height: 100px !important;
+    }
+
+    .swatch .info {
+      padding: 12px 10px !important;
+    }
+
+    .swatch .info b {
+      font-size: 0.82rem !important;
+    }
+
+    .swatch .info span {
+      font-size: 0.7rem !important;
+    }
+
+    .type-card {
+      padding: 24px !important;
+    }
+
+    .type-card, .type-card * {
+      word-break: break-all !important;
+      overflow-wrap: break-word !important;
+    }
+
+    .type-card .sample-syne {
+      font-size: 2.2rem !important;
+    }
+
+    .type-card .sample-garamond {
+      font-size: 2.4rem !important;
+    }
+
+    .type-card .sample-inter {
+      font-size: 1.15rem !important;
+    }
+
+    .app-card {
+      min-height: 220px !important;
+      padding: 24px !important;
+    }
+
+    .phone {
+      margin: 0 auto !important;
+      max-width: 100% !important;
+    }
+
+    .reference img {
+      max-width: 100% !important;
+      margin-top: 12px !important;
+    }
+
+    .related-card {
+      min-height: 220px !important;
+      padding: 24px !important;
+    }
+
+    .contact-cta {
+      padding: 60px 6vw !important;
+    }
+
+    .contact-cta h2 {
+      font-size: clamp(2.2rem, 8vw, 4rem) !important;
+    }
+
+    .contact-cta p {
+      margin-bottom: 30px !important;
+    }
+
+    .back-btn {
+      top: 14px;
+      left: 14px;
+      font-size: 0.75rem !important;
+      padding: 8px 14px 8px 10px !important;
+      background: rgba(10, 10, 10, 0.85) !important;
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+    }
   }
 </style>
 </head>
