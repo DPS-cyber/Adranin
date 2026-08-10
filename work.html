@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work Library — adranin</title>
+  <meta name="description"
+    content="Browse adranin's work library: reels, photography, web and brand design across every project we've shipped.">
+  <link rel="canonical" href="https://add-it.pages.dev/work.html">
+  <link rel="icon" href="assets/logo.png" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=JetBrains+Mono:wght@500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/theme-init.js"></script>
+</head>
+
+<body>
+
+  <!-- ============ NAV ============ -->
+  <global-header></global-header>
+
+  <main>
+    <!-- ============ PAGE HERO ============ -->
+    <section class="page-hero">
+      <div class="wrap">
+        <div class="crumb"><a href="index.html">Home</a> / Work</div>
+        <div class="eyebrow">Work library</div>
+        <h1 class="h-xl">Every reel, frame<br>and <span class="stroke accent">build<svg viewBox="0 0 220 24"
+              preserveAspectRatio="none">
+              <path d="M2,14 C50,4 100,20 130,10 C160,2 190,16 218,8" stroke="#EA5C1F" stroke-width="6" fill="none"
+                stroke-linecap="round" />
+            </svg></span>, unsorted.</h1>
+        <p class="lede on-dark">The raw output — reels, photography, web and brand design. Looking for the story behind
+          a project instead? That's the <a href="case-studies.html"
+            style="color:var(--orange); text-decoration:underline;">case studies</a>.</p>
+      </div>
+    </section>
+
+    <!-- ============ LIBRARY ============ -->
+    <section class="block">
+      <div class="wrap">
+        <div class="lib-tools reveal">
+          <input type="text" id="workSearch" class="lib-search" placeholder="Search the library…">
+          <div class="filters">
+            <button class="filter active" data-filter="all">All</button>
+            <button class="filter" data-filter="reel">Reels</button>
+            <button class="filter" data-filter="photo">Photos</button>
+            <button class="filter" data-filter="web">Web</button>
+            <button class="filter" data-filter="brand">Brand</button>
+          </div>
+        </div>
+
+        <div class="feed-grid reveal" id="feedGrid">
+          <div class="feed-item" data-tags="reel content mastery"><video
+              src="https://github.com/DPS-cyber/Addit/releases/download/3.0/r1.mp4" autoplay loop muted
+              playsinline></video><span class="peek">Reel</span></div>
+          <div class="feed-item" data-tags="photo brand mastery"><img src="ad1.jpg" loading="lazy" alt=""><span
+              class="peek">Photo</span></div>
+          <div class="feed-item" data-tags="photo brand"><img src="ad2.jpg" loading="lazy" alt=""><span
+              class="peek">Photo</span></div>
+          <div class="feed-item" data-tags="reel conversion"><video
+              src="https://github.com/DPS-cyber/Addit/releases/download/3.0/r2.mp4" autoplay loop muted
+              playsinline></video><span class="peek">Reel</span></div>
+          <div class="feed-item" data-tags="web conversion"><img src="ad3.jpg" loading="lazy" alt=""><span
+              class="peek">Web</span></div>
+          <div class="feed-item" data-tags="reel content"><video
+              src="https://github.com/DPS-cyber/Addit/releases/download/3.0/r3.mp4" autoplay loop muted
+              playsinline></video><span class="peek">Reel</span></div>
+          <div class="feed-item" data-tags="photo content"><img src="ad4.JPG" loading="lazy" alt=""><span
+              class="peek">Photo</span></div>
+          <div class="feed-item" data-tags="photo brand"><img src="ad5.jpg" loading="lazy" alt=""><span
+              class="peek">Photo</span></div>
+          <div class="feed-item" data-tags="reel mastery"><video
+              src="https://github.com/DPS-cyber/Addit/releases/download/3.0/r4.mp4" autoplay loop muted
+              playsinline></video><span class="peek">Reel</span></div>
+          <div class="feed-item" data-tags="web brand"><img src="ad6.jpg" loading="lazy" alt=""><span
+              class="peek">Web</span></div>
+          <div class="feed-item" data-tags="reel content"><video
+              src="https://github.com/DPS-cyber/Addit/releases/download/3.0/Song.mp4" autoplay loop muted
+              playsinline></video><span class="peek">Reel</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA BAND ============ -->
+    <section class="block ink">
+      <div class="wrap" style="text-align:center;">
+        <div class="eyebrow" style="justify-content:center;">Want the full story?</div>
+        <h2 class="h-lg">See how these <span class="accent">turned into results</span>.</h2>
+        <a href="case-studies.html" class="btn btn-solid" style="margin-top:30px;">Read the case studies <i
+            class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ CONTACT OVERLAY ============ -->
+  <div id="contact-overlay">
+    <div id="contact-close" class="js-close-contact">&times;</div>
+    <div class="wrap contact-grid">
+      <div class="reveal">
+        <div class="eyebrow">Start a project</div>
+        <h2 class="h-lg">Let's build<br>something that<br><span class="accent">compounds</span>.</h2>
+        <p class="lede" style="margin-top:24px;">Tell us where the brand is today and where it needs to be. We'll reply
+          within one business day.</p>
+        <div class="contact-list">
+          <div class="row"><span>Email</span><span>hello@itsadranin.com</span></div>
+          <div class="row"><span>Instagram</span><span>@itsadranin</span></div>
+          <div class="row"><span>Based in</span><span>Hyderabad, India</span></div>
+        </div>
+      </div>
+
+      <form id="contactForm" class="card-form reveal">
+        <div style="position:absolute; left:-9999px;" aria-hidden="true">
+          <input type="text" name="username_hp" tabindex="-1" autocomplete="off">
+        </div>
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+        </div>
+        <div class="form-row">
+          <input type="tel" name="phone" placeholder="Phone">
+          <div class="dd" id="dd">
+            <div class="dd-trigger" id="ddTrigger"><span id="ddLabel">Select service</span><i
+                class="fa-solid fa-chevron-down"></i></div>
+            <input type="hidden" name="service" id="serviceInputVal">
+            <div class="dd-menu" id="ddMenu">
+              <div class="opt" data-value="Content">Content Sprint</div>
+              <div class="opt" data-value="Conversion">Conversion Engine</div>
+              <div class="opt" data-value="Mastery">Social Mastery</div>
+            </div>
+          </div>
+        </div>
+        <input type="text" name="channels" placeholder="Instagram / business URL">
+        <input type="text" name="purpose" placeholder="Project purpose / goal">
+        <textarea name="message" placeholder="Details" rows="4"></textarea>
+        <button type="submit" class="submit-btn">Submit</button>
+        <p id="form-resp"></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- ============ SERVERLESS COMPONENT OVERLAYS ============ -->
+  <global-contact></global-contact>
+  <global-lightbox></global-lightbox>
+
+  <!-- ============ SERVERLESS COMPONENT FOOTER ============ -->
+  <global-footer></global-footer>
+  <script src="js/form.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const search = document.getElementById("workSearch");
+      const filters = document.querySelectorAll(".filters .filter");
+      const items = document.querySelectorAll("#feedGrid .feed-item");
+      let active = "all";
+
+      function run() {
+        const q = (search?.value || "").trim().toLowerCase();
+        items.forEach(item => {
+          const tags = item.getAttribute("data-tags") || "";
+          const okFilter = active === "all" || tags.includes(active);
+          const okQuery = q === "" || tags.includes(q);
+          item.classList.toggle("hidden", !(okFilter && okQuery));
+        });
+      }
+
+      filters.forEach(btn => {
+        btn.addEventListener("click", () => {
+          filters.forEach(b => b.classList.remove("active"));
+          btn.classList.add("active");
+          active = btn.getAttribute("data-filter");
+          run();
+        });
+      });
+      search?.addEventListener("input", run);
+
+      const lightbox = document.getElementById("lightbox");
+      const lightboxContent = document.getElementById("lightbox-content");
+      items.forEach(item => {
+        item.addEventListener("click", () => {
+          const media = item.querySelector("img, video");
+          if (!media) return;
+          lightboxContent.innerHTML = "";
+          const clone = media.cloneNode(true);
+          if (clone.tagName === "VIDEO") { clone.setAttribute("controls", ""); clone.removeAttribute("autoplay"); }
+          lightboxContent.appendChild(clone);
+          lightbox.classList.add("show");
+        });
+      });
+      document.getElementById("lightbox-close")?.addEventListener("click", () => {
+        lightbox.classList.remove("show"); lightboxContent.innerHTML = "";
+      });
+      lightbox?.addEventListener("click", (e) => {
+        if (e.target === lightbox) { lightbox.classList.remove("show"); lightboxContent.innerHTML = ""; }
+      });
+    });
+  </script>
+</body>
+
+</html>
