@@ -19,6 +19,92 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* =========================================================
+       WORK FEED GRID & FEED ITEM REFINEMENTS
+       ========================================================= */
+    .feed-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px 24px;
+      margin-top: 48px;
+    }
+
+    @media (max-width: 1100px) {
+      .feed-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .feed-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .feed-item {
+      position: relative;
+      border-radius: var(--radius);
+      overflow: hidden;
+      aspect-ratio: 4 / 5;
+      background: var(--surface-2);
+      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.05);
+      cursor: pointer;
+      transition: transform 0.5s var(--ease), box-shadow 0.5s var(--ease), border-color 0.5s var(--ease);
+      border: 1px solid var(--line);
+    }
+
+    .feed-item.hidden {
+      display: none;
+    }
+
+    .feed-item img,
+    .feed-item video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.6s var(--ease);
+    }
+
+    .feed-item:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 32px 64px rgba(0, 0, 0, 0.15);
+      border-color: var(--orange);
+    }
+
+    .feed-item:hover img,
+    .feed-item:hover video {
+      transform: scale(1.04);
+    }
+
+    /* Style the .peek overlay badge */
+    .feed-item .peek {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--white);
+      background: rgba(10, 10, 10, 0.6);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      padding: 8px 16px;
+      border-radius: 40px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      z-index: 2;
+      pointer-events: none;
+      transition: background 0.3s var(--ease), border-color 0.3s var(--ease);
+    }
+
+    .feed-item:hover .peek {
+      background: var(--orange);
+      border-color: var(--orange);
+    }
+  </style>
   <script src="js/theme-init.js"></script>
 </head>
 
@@ -62,26 +148,26 @@
           <div class="feed-item" data-tags="reel content mastery"><video
               src="https://github.com/DPS-cyber/Addit/releases/download/3.0/r1.mp4" autoplay loop muted
               playsinline></video><span class="peek">Reel</span></div>
-          <div class="feed-item" data-tags="photo brand mastery"><img src="ad1.jpg" loading="lazy" alt=""><span
+          <div class="feed-item" data-tags="photo brand mastery"><img src="https://raw.githubusercontent.com/DPS-cyber/Addit/main/ad1.jpg" loading="lazy" alt="Verve Fitness Content"><span
               class="peek">Photo</span></div>
-          <div class="feed-item" data-tags="photo brand"><img src="ad2.jpg" loading="lazy" alt=""><span
+          <div class="feed-item" data-tags="photo brand"><img src="https://raw.githubusercontent.com/DPS-cyber/Addit/main/ad2.jpg" loading="lazy" alt="Loom and Co Brand System"><span
               class="peek">Photo</span></div>
           <div class="feed-item" data-tags="reel conversion"><video
               src="https://github.com/DPS-cyber/Addit/releases/download/3.0/r2.mp4" autoplay loop muted
               playsinline></video><span class="peek">Reel</span></div>
-          <div class="feed-item" data-tags="web conversion"><img src="ad3.jpg" loading="lazy" alt=""><span
+          <div class="feed-item" data-tags="web conversion"><img src="https://raw.githubusercontent.com/DPS-cyber/Addit/main/ad3.jpg" loading="lazy" alt="Studio Noir Booking Optimization"><span
               class="peek">Web</span></div>
           <div class="feed-item" data-tags="reel content"><video
               src="https://github.com/DPS-cyber/Addit/releases/download/3.0/r3.mp4" autoplay loop muted
               playsinline></video><span class="peek">Reel</span></div>
-          <div class="feed-item" data-tags="photo content"><img src="ad4.JPG" loading="lazy" alt=""><span
+          <div class="feed-item" data-tags="photo content"><img src="https://raw.githubusercontent.com/DPS-cyber/Addit/main/ad4.JPG" loading="lazy" alt="High Velocity Production Shoot"><span
               class="peek">Photo</span></div>
-          <div class="feed-item" data-tags="photo brand"><img src="ad5.jpg" loading="lazy" alt=""><span
+          <div class="feed-item" data-tags="photo brand"><img src="https://raw.githubusercontent.com/DPS-cyber/Addit/main/ad5.jpg" loading="lazy" alt="Kadence Coffee Asset Sprint"><span
               class="peek">Photo</span></div>
           <div class="feed-item" data-tags="reel mastery"><video
               src="https://github.com/DPS-cyber/Addit/releases/download/3.0/r4.mp4" autoplay loop muted
               playsinline></video><span class="peek">Reel</span></div>
-          <div class="feed-item" data-tags="web brand"><img src="ad6.jpg" loading="lazy" alt=""><span
+          <div class="feed-item" data-tags="web brand"><img src="https://raw.githubusercontent.com/DPS-cyber/Addit/main/ad6.jpg" loading="lazy" alt="Dynamic UX Architecture"><span
               class="peek">Web</span></div>
           <div class="feed-item" data-tags="reel content"><video
               src="https://github.com/DPS-cyber/Addit/releases/download/3.0/Song.mp4" autoplay loop muted
