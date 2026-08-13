@@ -101,52 +101,6 @@
     </section>
   </main>
 
-  <!-- ============ CONTACT OVERLAY ============ -->
-  <div id="contact-overlay">
-    <div id="contact-close" class="js-close-contact">&times;</div>
-    <div class="wrap contact-grid">
-      <div class="reveal">
-        <div class="eyebrow">Start a project</div>
-        <h2 class="h-lg">Let's build<br>something that<br><span class="accent">compounds</span>.</h2>
-        <p class="lede" style="margin-top:24px;">Tell us where the brand is today and where it needs to be. We'll reply
-          within one business day.</p>
-        <div class="contact-list">
-          <div class="row"><span>Email</span><span>hello@itsadranin.com</span></div>
-          <div class="row"><span>Instagram</span><span>@itsadranin</span></div>
-          <div class="row"><span>Based in</span><span>Hyderabad, India</span></div>
-        </div>
-      </div>
-
-      <form id="contactForm" class="card-form reveal">
-        <div style="position:absolute; left:-9999px;" aria-hidden="true">
-          <input type="text" name="username_hp" tabindex="-1" autocomplete="off">
-        </div>
-        <div class="form-row">
-          <input type="text" name="name" placeholder="Name" required>
-          <input type="email" name="email" placeholder="Email" required>
-        </div>
-        <div class="form-row">
-          <input type="tel" name="phone" placeholder="Phone">
-          <div class="dd" id="dd">
-            <div class="dd-trigger" id="ddTrigger"><span id="ddLabel">Select service</span><i
-                class="fa-solid fa-chevron-down"></i></div>
-            <input type="hidden" name="service" id="serviceInputVal">
-            <div class="dd-menu" id="ddMenu">
-              <div class="opt" data-value="Content">Content Sprint</div>
-              <div class="opt" data-value="Conversion">Conversion Engine</div>
-              <div class="opt" data-value="Mastery">Social Mastery</div>
-            </div>
-          </div>
-        </div>
-        <input type="text" name="channels" placeholder="Instagram / business URL">
-        <input type="text" name="purpose" placeholder="Project purpose / goal">
-        <textarea name="message" placeholder="Details" rows="4"></textarea>
-        <button type="submit" class="submit-btn">Submit</button>
-        <p id="form-resp"></p>
-      </form>
-    </div>
-  </div>
-
   <!-- ============ SERVERLESS COMPONENT OVERLAYS ============ -->
   <global-contact></global-contact>
   <global-lightbox></global-lightbox>
@@ -182,26 +136,6 @@
         });
       });
       search?.addEventListener("input", run);
-
-      const lightbox = document.getElementById("lightbox");
-      const lightboxContent = document.getElementById("lightbox-content");
-      items.forEach(item => {
-        item.addEventListener("click", () => {
-          const media = item.querySelector("img, video");
-          if (!media) return;
-          lightboxContent.innerHTML = "";
-          const clone = media.cloneNode(true);
-          if (clone.tagName === "VIDEO") { clone.setAttribute("controls", ""); clone.removeAttribute("autoplay"); }
-          lightboxContent.appendChild(clone);
-          lightbox.classList.add("show");
-        });
-      });
-      document.getElementById("lightbox-close")?.addEventListener("click", () => {
-        lightbox.classList.remove("show"); lightboxContent.innerHTML = "";
-      });
-      lightbox?.addEventListener("click", (e) => {
-        if (e.target === lightbox) { lightbox.classList.remove("show"); lightboxContent.innerHTML = ""; }
-      });
     });
   </script>
 </body>
